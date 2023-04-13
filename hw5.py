@@ -1,0 +1,92 @@
+def read_single_digit(d):
+    if d==1:
+        return '일'
+    elif d==2:
+        return '이'
+    elif d==3:
+        return '삼'
+    elif d==4:
+        return '사'
+    elif d==5:
+        return '오'
+    elif d==6:
+        return '육'
+    elif d==7:
+        return '칠'
+    elif d==8:
+        return '팔'
+    elif d==9:
+        return '구'
+    elif d==0:
+        return '영'
+def read_number(num):
+    if num[0]==1:
+        return '일'
+    elif num[0]==2:
+        return '이'
+    elif num[0]==3:
+        return '삼'
+    elif num[0]==4:
+        return '사'
+    elif num[0]==5:
+        return '오'
+    elif num[0]==6:
+        return '육'
+    elif num[0]==7:
+        return '칠'
+    elif num[0]==8:
+        return '팔'
+    elif num[0]==9:
+        return '구'
+    elif num[0]==0:
+        return '영'
+    if num[1]==1:
+        return '일'
+    elif num[1]==2:
+        return '이'
+    elif num[1]==3:
+        return '삼'
+    elif num[1]==4:
+        return '사'
+    elif num[1]==5:
+        return '오'
+    elif num[1]==6:
+        return '육'
+    elif num[1]==7:
+        return '칠'
+    elif num[1]==8:
+        return '팔'
+    elif num[1]==9:
+        return '구'
+    elif num[1]==0:
+        return '영'
+    if num[2]==1:
+        return '일'
+    elif num[2]==2:
+        return '이'
+    elif num[2]==3:
+        return '삼'
+    elif num[2]==4:
+        return '사'
+    elif num[2]==5:
+        return '오'
+    elif num[2]==6:
+        return '육'
+    elif num[2]==7:
+        return '칠'
+    elif num[2]==8:
+        return '팔'
+    elif num[2]==9:
+        return '구'
+    elif num[2]==0:
+        return '영'
+    
+number=(input('세 자리 정수 입력: '))    
+l=len(number)
+readsd=read_single_digit(number)
+readn=read_number(number)
+if l==3:
+    print(f'{readn}')
+elif l==1:
+    print(f'{readsd}')
+    
